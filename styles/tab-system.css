@@ -1,0 +1,70 @@
+/* styles/tab-system.css */
+
+/* 5. Tab System Styles */
+.tab-container {
+    margin-bottom: 30px;
+}
+
+.tab-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    padding: 6px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px 8px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 4px;
+    min-height: 44px; /* Minimum touch target size */
+    flex-basis: calc(50% - 8px);
+}
+
+.tab-btn i {
+    transition: transform 0.3s ease;
+    margin-right: 6px;
+}
+
+.tab-btn:hover, .tab-btn:active {
+    background-color: var(--primary-light);
+}
+
+.tab-btn:hover i {
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(58, 123, 213, 0.3);
+}
+
+.tab-btn.active i {
+    color: rgba(255,255,255,0.9);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content.active {
+    display: block;
+}
