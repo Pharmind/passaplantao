@@ -1,0 +1,14 @@
+/* styles.css */
+
+/* Import statements for different sections */
+@import url('styles/root.css');
+@import url('styles/global.css');
+@import url('styles/header.css');
+@import url('styles/form-elements.css');
+@import url('styles/tab-system.css');
+@import url('styles/utility.css');
+@import url('styles/media-queries.css');
+@import url('styles/print.css');
+@import url('styles/form-mode-toggle.css');
+@import url('styles/footer.css');
+
