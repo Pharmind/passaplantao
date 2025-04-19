@@ -1,0 +1,48 @@
+/* styles/print.css */
+
+/* 8. Print Styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 100%;
+        box-shadow: none;
+        padding: 15px;
+    }
+    
+    .form-actions, .quick-actions, .checkbox-group, .clear-field-btn {
+        display: none;
+    }
+    
+    .common-inputs {
+        border: none;
+        padding: 0;
+        background: transparent;
+    }
+    
+    textarea {
+        border: none;
+        padding: 0;
+    }
+    
+    .tab-buttons {
+        display: none;
+    }
+    
+    .tab-content {
+        display: block !important;
+    }
+    
+    .sharing-info, .keyboard-hint, .mobile-fab {
+        display: none;
+    }
+    
+    .form-group, .date-shift-group {
+        box-shadow: none;
+        border: none;
+        padding: 8px 0;
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "imports": {
+        "./core.js": "./js/core.js",
+        "./tabs.js": "./js/tabs.js",
+        "./forms.js": "./js/forms.js",
+        "./storage.js": "./js/storage.js",
+        "./ui.js": "./js/ui.js",
+        "./suggestions.js": "./js/suggestions.js",
+        "./components.js": "./js/components.js",
+        "./sharing.js": "./js/sharing.js",
+        "./components/forms-satelites.js": "./js/components/forms-satelites.js",
+        "./components/tabs/tab-buttons.js": "./js/components/tabs/tab-buttons.js",
+        "./components/tabs/tab-satelites.js": "./js/components/tabs/tab-satelites.js",
+        "./components/tabs/tab-caf.js": "./js/components/tabs/tab-caf.js",
+        "./components/tabs/report-mode.js": "./js/components/tabs/report-mode.js"
+    }
+}
+

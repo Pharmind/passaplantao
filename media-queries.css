@@ -1,0 +1,151 @@
+/* styles/media-queries.css */
+
+/* 7. Media Queries */
+/* Mobile first approach - These styles apply to all sizes */
+/* Add mobile-specific larger tap targets */
+.mobile-select {
+    font-size: 16px; /* Prevent zoom on focus in iOS */
+}
+
+/* Hide keyboard hint on mobile - use fixed button instead */
+@media (max-width: 768px) {
+    .keyboard-hint {
+        display: none;
+    }
+    
+    /* Add a floating action button for quick save on mobile */
+    .mobile-fab {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        color: white;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    .mobile-fab i {
+        margin: 0;
+    }
+}
+
+/* Media query for small phones */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .container {
+        padding: 12px;
+        border-radius: 8px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .form-group, .date-shift-group {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .field-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .field-header label {
+        margin-bottom: 8px;
+    }
+    
+    .clear-field-btn {
+        margin-left: 0;
+    }
+    
+    .radio-container {
+        flex-basis: 100%;
+    }
+    
+    .checkbox-item {
+        flex-basis: 100%;
+    }
+    
+    .tab-btn {
+        font-size: 0.9rem;
+        padding: 10px 8px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .form-actions button {
+        width: 100%;
+    }
+    
+    textarea {
+        min-height: 100px;
+    }
+}
+
+/* Medium-sized phones and small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
+    
+    .tab-btn {
+        flex-basis: calc(50% - 8px);
+    }
+    
+    .form-actions {
+        flex-wrap: wrap;
+    }
+    
+    .form-actions button {
+        flex-basis: calc(50% - 5px);
+    }
+    
+    .checkbox-item {
+        flex-basis: calc(50% - 4px);
+    }
+}
+
+/* Larger tablets and desktops */
+@media (min-width: 769px) {
+    .container {
+        padding: 30px;
+    }
+    
+    .date-shift-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .date-container {
+        margin-bottom: 0;
+    }
+    
+    .form-actions button {
+        min-width: 120px;
+    }
+    
+    .checkbox-item {
+        flex-basis: auto;
+    }
+}

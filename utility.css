@@ -1,0 +1,106 @@
+/* styles/utility.css */
+
+/* 6. Utility Classes and Small Components */
+.timestamp {
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--placeholder-color);
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.clear-field-btn {
+    background-color: rgba(230, 55, 87, 0.08);
+    color: var(--danger-color);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s;
+    min-height: 34px; /* Better touch target */
+}
+
+.clear-field-btn:hover, .clear-field-btn:active {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.field-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.field-header label {
+    font-size: 1.05rem;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.clear-field-btn {
+    margin-left: 10px;
+}
+
+.smart-suggestions {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    min-height: 20px;
+    background-color: var(--primary-light);
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.smart-suggestions:not(:empty) {
+    opacity: 0.85;
+}
+
+.keyboard-hint {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.keyboard-hint:hover {
+    opacity: 1;
+}
+
+.sharing-info {
+    text-align: center;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+}
+
+.sharing-info i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+textarea:focus, input:focus, select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.2);
+    outline: none;
+}

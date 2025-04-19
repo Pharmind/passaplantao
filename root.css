@@ -1,0 +1,17 @@
+/* styles/root.css */
+
+/* 1. Root Variables (Theming) */
+:root {
+    --primary-color: #3a7bd5;
+    --primary-light: #f0f6ff;
+    --secondary-color: #f9fbfd;
+    --accent-color: #00c07f;
+    --border-color: #e3ebf6;
+    --text-color: #12263f;
+    --placeholder-color: #95aac9;
+    --danger-color: #e63757;
+    --warning-color: #f6c343;
+    --light-bg: #f6f9fc;
+    --shadow-color: rgba(18, 38, 63, 0.05);
+    --card-shadow: 0 .5rem 1rem var(--shadow-color);
+}
